@@ -173,7 +173,7 @@ const App = () => {
                 required
               />
               <div className="bg-gray-800 text-white w-full p-3 border border-transparent rounded-md shadow-sm flex items-center justify-between z-10 relative cursor-pointer">
-                <span>{file ? file.name : 'No file chosen'}</span>
+                <span className='max-w-40 snap-y'>{file ? `${file.name.slice(0,10)}...h5`  : 'No file chosen'}</span>
                 <span className="bg-indigo-600 text-white px-4 py-2 rounded-md">Choose File</span>
               </div>
             </div>
